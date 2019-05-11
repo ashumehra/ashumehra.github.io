@@ -5,7 +5,7 @@ html {
    font-size: 62.5%;
    -webkit-font-smoothing: antialiased;
    font-family: 'Roboto', sans-serif;
-
+   scroll-behavior: smooth;
 } 
 
 body{
@@ -18,6 +18,41 @@ body{
   font-family: 'Roboto', sans-serif;
 
 }
+
+
+/* top navigation bar */
+
+/* Add a black background color to the top navigation */
+.topnav {
+   background-color: transparent;
+   overflow: hidden;
+   align-items: flex-end;
+ }
+ 
+ /* Style the links inside the navigation bar */
+ .topnav a {
+   float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+ }
+ 
+ /* Change the color of links on hover */
+ .topnav a:hover {
+   background-color: transparent;
+   color: black;
+ }
+ 
+ /* Add a color to the active/current link */
+ .topnav a.active {
+   background-color: transparent;
+   color: white;
+ }
+
+
+
 
 header .banner-text{
 	background-image: url("../images/profilepic.JPG");
@@ -103,6 +138,23 @@ header .banner-text h3
     clear: both;
 }
 
+.btntop {
+   background-color: transparent;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 12px;
+  position: relative;
+  top:530px; 
+  left:48%;
+  
+ }
+ .btntop:hover {
+   background-color: white;
+   color: #2B2B2B
+ }
 
 
 
@@ -395,4 +447,18 @@ footer .social-links li {
 
 footer .social-links li:first-child { margin-left: 0; }
 
-
+.btn {
+   background-color: transparent;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 12px;
+ }
+ 
+ /* Darker background on mouse-over */
+ .btn:hover {
+   background-color: white;
+   color: #2B2B2B
+ }

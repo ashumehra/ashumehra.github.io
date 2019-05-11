@@ -16,9 +16,15 @@
 <body>
 	<header>
 		<div class="banner-text" >
+            <div class="topnav">
+                  <a class="active" href="#home">Home</a>
+                  <a href="#about">About</a>
+                  <a href="#resume">Education</a>
+                </div>
 			<h1 class="center">I'm Ashutosh Mehra</h1>
 			<h3>I am Computer Science Student At Shri G. S. Inst. Of Tech And Sci. Let's start scrolling and learn more about me.</h3>
-		</div>
+         <button onclick='about()' class="btntop"><i class="fa fa-angle-double-down" style="font-size:36px"></i></button>
+      </div>
 	</header>
 
 	<section id="about">
@@ -173,7 +179,7 @@
 
 
 <footer>
-
+      <button onclick='change()' class="btn"><i class="fa fa-angle-double-up" style="font-size:36px"></i></button>
       <div class="row">
       	<h3>Let's Connect</h3>
          <div class="twelve columns">
@@ -189,6 +195,17 @@
       </div>
 
    </footer> <!-- Footer End-->
+   <script>
+         let change = function()
+         {  //sleep(2);
+            document.body.scrollIntoView({behavior: 'smooth', block: 'start'});
+         }
+         let about = function()
+         {
+            let ele= document.getElementById("about");
+            ele.scrollIntoView({behavior:'smooth'});
+         }
+      </script>
 
 </body>
 </html>
